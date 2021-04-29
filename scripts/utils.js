@@ -76,7 +76,7 @@ export function newArray(arr, n, width, spacing) {
 }
 
 export async function reverse(arr, n, speed) {
-  for (let i = 0, j = n - 1; i < j; i++, j--) {
+  for (let i = 0, j = n - 1; i <= j; i++, j--) {
     setColor(arr, i, "red");
     setColor(arr, j, "red");
     await sleep(speed);
